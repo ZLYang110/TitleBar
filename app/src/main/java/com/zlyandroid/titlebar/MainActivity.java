@@ -15,7 +15,11 @@ import com.zlylib.titlebarlib.ActionBarSearch;
 import com.zlylib.titlebarlib.OnActionBarChildClickListener;
 import com.zlylib.titlebarlib.widget.ActionBarEx;
 
-
+/**
+ * @author zhangliyang
+ * @date 2019/11/16
+ * @github https://github.com/ZLYang110
+ */
 public class MainActivity extends AppCompatActivity {
 
     private ActionBarCommon simple_action_bar_1;
@@ -24,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarSearch search_action_bar_1;
     private ActionBarSearch search_action_bar_2;
     private ActionBarEx action_bar;
-    private ActionBarEx action_bar_ex_1;
     private ActionBarEx action_bar_ex_2;
 
     @Override
@@ -40,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         simple_action_bar_3 = findViewById(R.id.simple_action_bar_3);
         search_action_bar_1 = findViewById(R.id.search_action_bar_1);
         search_action_bar_2 = findViewById(R.id.search_action_bar_2);
-        action_bar_ex_1 = findViewById(R.id.action_bar_ex_1);
         action_bar_ex_2 = findViewById(R.id.action_bar_ex_2);
 
         action_bar.getView(R.id.tv_title_refresh_bg).setOnClickListener(new View.OnClickListener() {
@@ -86,13 +88,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        findViewById(R.id.tv_test_in_fragment).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-             //   Intent intent = new Intent(MainActivity.this, TestInFragmentActivity.class);
-             //   startActivity(intent);
-            }
-        });
+
 
         findViewById(R.id.tv_show_loading).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
                 simple_action_bar_3.getForegroundLayer().setVisibility(View.VISIBLE);
                 search_action_bar_1.getForegroundLayer().setVisibility(View.VISIBLE);
                 search_action_bar_2.getForegroundLayer().setVisibility(View.VISIBLE);
-                action_bar_ex_1.getForegroundLayer().setVisibility(View.VISIBLE);
                 action_bar_ex_2.getForegroundLayer().setVisibility(View.VISIBLE);
                 new Handler().postDelayed(new Runnable() {
                     @Override
@@ -112,7 +107,6 @@ public class MainActivity extends AppCompatActivity {
                         simple_action_bar_3.getForegroundLayer().setVisibility(View.GONE);
                         search_action_bar_1.getForegroundLayer().setVisibility(View.GONE);
                         search_action_bar_2.getForegroundLayer().setVisibility(View.GONE);
-                        action_bar_ex_1.getForegroundLayer().setVisibility(View.GONE);
                         action_bar_ex_2.getForegroundLayer().setVisibility(View.GONE);
                     }
                 }, 2000);

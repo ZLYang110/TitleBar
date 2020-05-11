@@ -17,7 +17,11 @@ import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.StringRes;
 import androidx.core.content.ContextCompat;
-
+/**
+ * @author zhangliyang
+ * @date 2019/11/16
+ * @github https://github.com/ZLYang110
+ */
 public final class ActionView extends FrameLayout {
 
     private String text;

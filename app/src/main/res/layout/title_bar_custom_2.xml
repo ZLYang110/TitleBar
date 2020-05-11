@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="带有背景图的自定义布局"
+            android:text="自定义背景"
             android:textColor="@color/white"
             android:textSize="17sp" />
 

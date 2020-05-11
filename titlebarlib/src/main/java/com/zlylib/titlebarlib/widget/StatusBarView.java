@@ -11,6 +11,7 @@ import per.goweii.statusbarcompat.StatusBarCompat;
 /**
  * @author zhangliyang
  * @date 2019/11/16
+ * @github https://github.com/ZLYang110
  */
 public class StatusBarView extends View {
 

@@ -20,8 +20,9 @@ import com.zlylib.titlebarlib.widget.ActionBarEx;
 
 
 /**
- * @author Cuizhen
- * @date 2018/8/30-上午11:10
+ * @author zhangliyang
+ * @date 2019/11/16
+ * @github https://github.com/ZLYang110
  */
 public final class ActionBarCommon extends ActionBarEx {
 

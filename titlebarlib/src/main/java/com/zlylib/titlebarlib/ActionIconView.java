@@ -5,7 +5,11 @@ import android.util.AttributeSet;
 import android.view.View;
 
 import androidx.appcompat.widget.AppCompatImageView;
-
+/**
+ * @author zhangliyang
+ * @date 2019/11/16
+ * @github https://github.com/ZLYang110
+ */
 public final class ActionIconView extends AppCompatImageView {
 
     public ActionIconView(Context context) {
