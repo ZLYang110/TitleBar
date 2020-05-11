@@ -34,7 +34,7 @@ allprojects {
 
 ```groovy
 dependencies {
-	  implementation 'com.github.ZLYang110:TitleBar:1.0'
+	  implementation 'com.github.ZLYang110:TitleBar:1.0.1'
 
 }
 ```
