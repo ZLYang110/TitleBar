@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3">
+
+    <ScrollView
+        android:layout_below="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.zlylib.titlebarlib.widget.ActionBarEx
+                android:id="@+id/action_bar_ex_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_gradient"
+                app:ab_immersion="unchanged"
+                app:ab_backgroundLayerImageRes="@mipmap/bg"
+                app:ab_bottomLineColor="@color/line"
+                app:ab_bottomLineHeight="0dp"
+                app:ab_clickToFinish="@id/iv_click_to_finish"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarLayout="@layout/title_bar_custom_2" />
+
+            <com.zlylib.titlebarlib.ActionBarCommon
+                android:id="@+id/simple_action_bar_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                app:ab_immersion="unchanged"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarHeight="48dp"
+                app:abc_leftIconColor="@color/black"
+                app:abc_leftIconRes="@mipmap/back"
+                app:abc_rightIconColor="@color/black"
+                app:abc_rightIconRes="@mipmap/search"
+                app:abc_titleText="标题" />
+            <com.zlylib.titlebarlib.ActionSearch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                app:ab_immersion="unchanged"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarHeight="48dp"
+                app:as_leftIconColor="@color/black"
+                app:as_leftIconRes="@mipmap/back"
+                app:as_rightIconColor="@color/black"
+                app:as_rightIconRes="@mipmap/more"
+                app:as_titleText="标题" />
+            <com.zlylib.titlebarlib.ActionBarCommon
+                android:id="@+id/simple_action_bar_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#232323"
+                app:ab_immersion="unchanged"
+                app:ab_bottomLineColor="@color/line"
+                app:ab_bottomLineHeight="0dp"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarHeight="48dp"
+                app:abc_leftText="返回"
+                app:abc_leftTextColor="@color/white"
+                app:abc_rightText="确定"
+                app:abc_rightTextColor="@color/white"
+                app:abc_titleText="标题"
+                app:abc_titleTextColor="@color/white" />
+
+            <com.zlylib.titlebarlib.ActionBarCommon
+                android:id="@+id/simple_action_bar_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_gradient"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_immersion="unchanged"
+                app:ab_bottomLineColor="@color/line"
+                app:ab_bottomLineHeight="0dp"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarHeight="48dp"
+                app:abc_leftIconColor="@color/black"
+                app:abc_leftIconRes="@mipmap/back"
+                app:abc_leftText="返回"
+                app:abc_leftTextPaddingLeft="0dp"
+                app:abc_leftTextPaddingRight="0dp"
+                app:abc_rightIconColor="@color/black"
+                app:abc_rightIconRes="@mipmap/search"
+                app:abc_rightText="确定"
+                app:abc_rightTextPaddingLeft="0dp"
+                app:abc_rightTextPaddingRight="0dp"
+                app:abc_titleText="标题"
+                app:abc_titleTextMaxWidth="180dp" />
+
+            <com.zlylib.titlebarlib.ActionBarSuper
+                android:id="@+id/action_bar_super_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                app:ab_immersion="unchanged"
+                app:ab_bottomLineColor="@color/line"
+                app:ab_bottomLineHeight="0dp"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarHeight="48dp"
+                app:absuper_left1Icon="@mipmap/back"
+                app:absuper_left1IconClickToFinish="true"
+                app:absuper_left2Text="返回"
+                app:absuper_left2TextClickToFinish="true"
+                app:absuper_left2TextColor="@color/white"
+                app:absuper_left2TextPadding="0dp"
+                app:absuper_right1Text="确定"
+                app:absuper_right1TextColor="@color/white"
+                app:absuper_right1TextMargin="0dp"
+                app:absuper_titleTextStyle="bold"
+                app:absuper_titleText="@string/app_name"
+                app:absuper_titleTextColor="@color/white" />
+
+            <com.zlylib.titlebarlib.ActionBarSuper
+                android:id="@+id/action_bar_super_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                app:ab_bottomLineColor="@color/line"
+                app:ab_bottomLineHeight="0dp"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_immersion="unchanged"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarHeight="48dp"
+                app:absuper_left1Icon="@mipmap/back"
+                app:absuper_left1IconClickToFinish="true"
+                app:absuper_right1Icon="@mipmap/search"
+                app:absuper_right1IconMarginRight="-5dp"
+                app:absuper_right1IconPadding="20dp"
+                app:absuper_titleText=" 标题"
+                app:absuper_subtitleText="研发技术部"
+                app:absuper_subtitleTextColor="#aaffffff"
+                app:absuper_titleGravity="center"
+                app:absuper_titleTextColor="@color/white" />
+
+            <com.zlylib.titlebarlib.ActionBarSuper
+                android:id="@+id/action_bar_super_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                app:ab_immersion="unchanged"
+                app:ab_bottomLineColor="@color/line"
+                app:ab_bottomLineHeight="0dp"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarHeight="48dp"
+                app:absuper_left1Icon="@mipmap/back"
+                app:absuper_left1IconClickToFinish="true"
+                app:absuper_left2Text="侧边标题"
+                app:absuper_left2TextColor="@color/white"
+                app:absuper_left2TextPadding="0dp"
+                app:absuper_left2TextSize="17sp"
+                app:absuper_right3Icon="@mipmap/more" />
+
+            <com.zlylib.titlebarlib.ActionBarSuper
+                android:id="@+id/action_bar_super_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                app:ab_immersion="unchanged"
+                app:ab_bottomLineColor="@color/line"
+                app:ab_bottomLineHeight="0dp"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarHeight="48dp"
+                app:absuper_left1Icon="@mipmap/back"
+                app:absuper_left1IconClickToFinish="true"
+                app:absuper_left2Icon="@mipmap/search"
+                app:absuper_right1Icon="@mipmap/download"
+                app:absuper_right2Icon="@mipmap/delete"
+                app:absuper_right3Icon="@mipmap/more" />
+            <com.zlylib.titlebarlib.ActionBarSearch
+                android:id="@+id/search_action_bar_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_gradient"
+                app:ab_immersion="unchanged"
+                app:ab_bottomLineColor="@color/line"
+                app:ab_bottomLineHeight="1dp"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarHeight="48dp"
+                app:abs_leftIconColor="@color/black"
+                app:abs_leftIconRes="@mipmap/back"
+                app:abs_rightIconColor="@color/black"
+                app:abs_rightIconRes="@mipmap/search"
+                app:abs_titleHintColor="#aaaaaa"
+                app:abs_titleHintText="这是一个搜索框..."
+                app:abs_titleTextColor="#232323"
+                app:abs_titleTextSize="15sp" />
+
+            <com.zlylib.titlebarlib.ActionBarSearch
+                android:id="@+id/search_action_bar_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_gradient"
+                app:ab_immersion="unchanged"
+                app:ab_bottomLineColor="@color/line"
+                app:ab_bottomLineHeight="1dp"
+                app:ab_foregroundLayerLayout="@layout/loading_bar"
+                app:ab_statusBarColor="@color/transparent"
+                app:ab_statusBarMode="unchanged"
+                app:ab_statusBarVisible="gone"
+                app:ab_titleBarHeight="48dp"
+                app:abs_leftIconColor="@color/black"
+                app:abs_leftIconRes="@mipmap/back"
+                app:abs_rightIconColor="@color/black"
+                app:abs_rightIconRes="@mipmap/search"
+                app:abs_titleBgRes="@drawable/search_bar_title_et_bg"
+                app:abs_titleHintColor="#aaaaaa"
+                app:abs_titleHintText="这是一个搜索框..."
+                app:abs_titleMarginVertical="8dp"
+                app:abs_titlePaddingHorizontal="16dp"
+                app:abs_titleTextColor="#232323"
+                app:abs_titleTextSize="15sp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_show_loading"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="loading" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="800dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.zlylib.titlebarlib.widget.ActionBarEx
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gradient"
+        app:ab_immersion="immersed"
+        app:ab_bottomLineHeight="10dp"
+        app:ab_bottomLineOutside="true"
+        app:ab_bottomLineResId="@drawable/bottom_line_bg"
+        app:ab_foregroundLayerLayout="@layout/loading_bar"
+        app:ab_statusBarColor="@color/transparent"
+        app:ab_statusBarMode="auto"
+        app:ab_statusBarVisible="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/black"
+                    android:src="@mipmap/back" />
+
+                <TextView
+                    android:id="@+id/tv_title_refresh_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="标题"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="15dp"
+                    android:visibility="gone"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/black"
+                    android:src="@mipmap/download" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/black"
+                    android:src="@mipmap/lifestyle_voice_ic" />
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/black"
+                    android:src="@mipmap/more" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.zlylib.titlebarlib.widget.ActionBarEx>
+
+</RelativeLayout>

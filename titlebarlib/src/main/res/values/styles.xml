@@ -15,6 +15,7 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:padding">@dimen/actionbarex_common_title_bar_icon_padding_def</item>
         <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
     </style>
 
     <style name="actionbarex_common_action_bar_text">

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">titlebarlib</string>
+    <string name="actionbarex_title_bar_title_text_hint_def">请输入...</string>
 </resources>

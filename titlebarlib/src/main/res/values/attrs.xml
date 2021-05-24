@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="ActionBarEx">
-        <attr name="ab_immersion" format="enum">
+        <attr name="ab_immersion" format="enum"><!--是否开启自动沉浸状态栏，默认为true-->
             <enum name="unchanged" value="0" />
             <enum name="ordinary" value="1" />
             <enum name="immersed" value="2" />
         </attr>
-        <attr name="ab_backgroundLayerLayout" format="reference" />
-        <attr name="ab_backgroundLayerImageRes" format="reference" />
-        <attr name="ab_statusBarVisible" format="enum">
+        <attr name="ab_backgroundLayerLayout" format="reference" /><!--背景层布局，优先级高于背景层为图片-->
+        <attr name="ab_backgroundLayerImageRes" format="reference" /><!--背景层为图片-->
+        <attr name="ab_statusBarVisible" format="enum"><!--是否显示状态栏  -->
             <enum name="auto" value="0" />
             <enum name="visible" value="1" />
             <enum name="gone" value="2" />
         </attr>
-        <attr name="ab_statusBarColor" format="color|reference" />
-        <attr name="ab_statusBarMode" format="enum">
+        <attr name="ab_statusBarColor" format="color|reference" /><!--状态栏颜色，默认透明-->
+        <attr name="ab_statusBarMode" format="enum"><!--状态栏图标颜色模式，默认light-->
             <enum name="unchanged" value="0" />
             <enum name="light" value="1" />
             <enum name="dark" value="2" />
             <enum name="auto" value="3" />
             <enum name="realTime" value="4" />
         </attr>
-        <attr name="ab_clickToFinish" format="reference" />
-        <attr name="ab_titleBarLayout" format="reference" />
-        <attr name="ab_titleBarHeight" format="dimension|reference" />
-        <attr name="ab_bottomLineHeight" format="dimension|reference" />
-        <attr name="ab_bottomLineColor" format="color|reference" />
-        <attr name="ab_bottomLineResId" format="reference" />
-        <attr name="ab_bottomLineOutside" format="boolean|reference" />
-        <attr name="ab_foregroundLayerLayout" format="reference" />
+        <attr name="ab_clickToFinish" format="reference" /><!--点击关闭Activity控件ID-->
+        <attr name="ab_titleBarLayout" format="reference" /><!--主体层布局-->
+        <attr name="ab_titleBarHeight" format="dimension|reference" /><!--主体层高度，默认为48dp-->
+        <attr name="ab_bottomLineHeight" format="dimension|reference" /><!--底部分割线高度，默认为0dp-->
+        <attr name="ab_bottomLineColor" format="color|reference" /><!--底部分割线颜色，默认透明-->
+        <attr name="ab_bottomLineResId" format="reference" /><!--底部分割线资源引用，默认透明-->
+        <attr name="ab_bottomLineOutside" format="boolean|reference" /><!--底部分割线位于ActionBar外部，可实现投影效果-->
+        <attr name="ab_foregroundLayerLayout" format="reference" /><!--前景层布局-->
     </declare-styleable>
 
 
@@ -85,6 +85,46 @@
         <attr name="abs_titleHintColor" format="color|reference" />
         <attr name="abs_titlePaddingHorizontal" format="dimension|reference" />
         <attr name="abs_titleMarginVertical" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ActionSearch">
+        <attr name="as_leftTextClickToFinish" format="boolean|reference" /><!--点击左边icon关闭-->
+        <attr name="as_leftIconClickToFinish" format="boolean|reference" /><!--点击左边文字关闭-->
+        <attr name="as_leftText" format="string|dimension" /><!--设置左边文字-->
+        <attr name="as_leftTextSize" format="dimension|reference" /><!--设置左边文字大小-->
+        <attr name="as_leftTextColor" format="color|reference" /><!--设置左边文字颜色-->
+        <attr name="as_leftTextPaddingLeft" format="dimension|reference" /><!--设置左边文字PaddingLeft-->
+        <attr name="as_leftTextPaddingRight" format="dimension|reference" /><!--设置左边文字PaddingRight-->
+        <attr name="as_leftIconRes" format="reference" /><!--设置左边icon-->
+        <attr name="as_leftIconColor" format="color|reference" /><!--设置左边icon颜色-->
+        <attr name="as_leftIconPadding" format="dimension|reference" />
+        <attr name="as_leftIconMarginLeft" format="dimension|reference" />
+        <attr name="as_rightIconRes" format="reference" /><!--设置右边icon-->
+        <attr name="as_rightIconColor" format="color|reference" /><!--设置右边icon颜色-->
+        <attr name="as_rightIconPadding" format="dimension|reference" />
+        <attr name="as_rightIconMarginRight" format="dimension|reference" />
+        <attr name="as_searchLeftIconRes" format="reference" /><!--设置搜索框内左边icon-->
+        <attr name="as_searchLeftIconColor" format="color|reference" /><!--设置搜索框内左边icon颜色-->
+        <attr name="as_searchLeftIconPadding" format="dimension|reference" />
+        <attr name="as_searchLeftIconMarginRight" format="dimension|reference" />
+        <attr name="as_searchEditHintText" format="string|reference" /><!--设置搜索框内提示文字-->
+        <attr name="as_searchEditTextHintColor" format="color|reference" /><!--设置搜索框内提示文字颜色-->
+        <attr name="as_searchEditText" format="string|reference" /><!--设置搜索框内默认文字-->
+        <attr name="as_searchEditTextSize" format="dimension|reference" /><!--设置搜索框内默认文字大小-->
+        <attr name="as_searchEditTextColor" format="color|reference" /><!--设置搜索框内默认文字颜色-->
+        <attr name="as_searchRightIconRes" format="reference" /><!--设置搜索框内右边icon-->
+        <attr name="as_searchRightIconColor" format="color|reference" /><!--设置搜索框内右边icon颜色-->
+        <attr name="as_searchRightIconPadding" format="dimension|reference" />
+        <attr name="as_searchRightIconMarginLeft" format="dimension|reference" />
+        <attr name="as_searchIconRes" format="reference" /><!--设置触发搜索框显示的icon-->
+        <attr name="as_searchIconColor" format="color|reference" /><!--设置触发搜索框显示的icon颜色-->
+        <attr name="as_searchIconPadding" format="dimension|reference" />
+        <attr name="as_searchIconMarginRight" format="dimension|reference" />
+        <attr name="as_searchEditBgRes" format="reference" /><!--搜索框背景-->
+        <attr name="as_titleText" format="string|reference" /><!--设置标题-->
+        <attr name="as_titleTextSize" format="dimension|reference" /><!--设置标题大小-->
+        <attr name="as_titleTextColor" format="color|reference" /><!--设置标题颜色-->
+        <attr name="as_titleTextMaxWidth" format="dimension|reference" />
     </declare-styleable>
 
     <declare-styleable name="ActionView">

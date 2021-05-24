@@ -29,4 +29,5 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.1.0'
     api 'com.github.goweii:StatusBarCompat:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
 }

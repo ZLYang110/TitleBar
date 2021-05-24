@@ -13,5 +13,6 @@
     <dimen name="actionbarex_common_title_bar_text_padding_right_def">15dp</dimen>
 
     <dimen name="actionbarex_common_title_bar_icon_padding_def">15dp</dimen>
+    <dimen name="actionbarex_common_title_bar_icon_padding">12dp</dimen>
 
 </resources>

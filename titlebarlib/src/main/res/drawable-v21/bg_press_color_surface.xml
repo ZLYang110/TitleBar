@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#11000000">
+    <!--去掉此item内容就是无界效果-->
+    <item>
+        <shape>
+            <!-- 中间的背景色-->
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f3f3f3">
+
+    <com.zlylib.titlebarlib.ActionBarCommon
+        android:id="@+id/action_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ab_immersion="immersed"
+        app:ab_backgroundLayerImageRes="@mipmap/bg"
+        app:ab_bottomLineColor="@color/line"
+        app:ab_bottomLineHeight="0dp"
+        app:ab_clickToFinish="@id/iv_click_to_finish"
+        app:ab_foregroundLayerLayout="@layout/loading_bar"
+        app:ab_statusBarColor="@color/transparent"
+        app:ab_statusBarMode="auto"
+        app:abc_leftIconColor="@color/white"
+        app:abc_leftIconRes="@mipmap/back"
+        app:abc_rightIconColor="@color/white"
+        app:abc_rightIconRes="@mipmap/more"
+        app:abc_titleText="标题"
+        app:abc_titleTextColor="@color/white"
+        />
+</LinearLayout>

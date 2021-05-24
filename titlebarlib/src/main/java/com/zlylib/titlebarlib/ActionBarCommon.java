@@ -1,5 +1,6 @@
 package com.zlylib.titlebarlib;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.text.TextUtils;
@@ -137,6 +138,7 @@ public final class ActionBarCommon extends ActionBarEx {
 
         typedArray.recycle();
     }
+    @SuppressLint("ResourceType")
     @Override
     protected View inflateTitleBar() {
         RelativeLayout titleBarChild = (RelativeLayout) LayoutInflater.from(getContext()).inflate(R.layout.actionbarex_common_action_bar_title_bar_common, getTitleBar(), false);
@@ -156,6 +158,7 @@ public final class ActionBarCommon extends ActionBarEx {
             leftIconView.setImageResource(leftIconRes);
             leftIconView.setColorFilter(leftIconColor);
             if (leftIconClickToFinish) {
+
                 leftIconView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
